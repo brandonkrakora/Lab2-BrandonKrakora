@@ -2,7 +2,7 @@
 
 # Team project
 
-Work in teams of two but submit individually (see details below)
+YOu may work in teams of two but submit individually (see details below)
 
 # Objectives
 
@@ -47,20 +47,20 @@ Please submit the following deliverables individually:
 
 # Grading
 
-- 0.5 Main: eliminate this code duplication
-- 0.5 Team: constructor with validation
-- 0.5 Team: remaining getters
-- 0.5 Search: findTeamPosition for List
-- 0.5 Search: findTeamMinFunding (linear search)
-- 1.0 Search: findTeamMinFundingFast (binary search)
-- 0.5 TestTeam: remaining tests
-- 0.5 TestSearch: makeListFixture
-- 1.0 TestSearch: remaining tests
-- 1.0 correct Gradle-based project structure
-- 1.0 correct use of Git version control
-- 2.5 Written part
-  - 1.5 responses to the questions above
-  - 0.5 grammar and style
-  - 0.5 formatting
+- 2 Main: eliminate this code duplication
+- 2 Team: constructor with validation
+- 2 Team: remaining getters
+- 2 Search: findTeamPosition for List
+- 2 Search: findTeamMinFunding (linear search)
+- 4 Search: findTeamMinFundingFast (binary search)
+- 2 TestTeam: remaining tests
+- 2 TestSearch: makeListFixture
+- 4 TestSearch: remaining tests
+- 4 correct Gradle-based project structure
+- 4 correct use of Git version control
+- 10 Written part
+  - 6 responses to the questions above
+  - 2 grammar and style
+  - 2 formatting
 
 *10 points TOTAL*
