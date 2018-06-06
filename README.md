@@ -63,4 +63,4 @@ Please submit the following deliverables individually:
   - 2 grammar and style
   - 2 formatting
 
-*10 points TOTAL*
+*40 points TOTAL*
