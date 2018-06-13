@@ -21,11 +21,16 @@ public class Main {
     final String key = keyboard.nextLine();
     System.out.println("Looking for team " + key);
 
+
     // Runs the linear search on the array
+    System.out.println("Running linear search on array");
     final Optional<Integer> index1 = Search.findTeamPosition(array, key);
     checkTeamArrayIndex(array, index1);
+
+    System.out.println();
     
     // Runs the linear search on the list
+    System.out.println("Running linear search on the list");
     final Optional<Integer> index2 = Search.findTeamPosition(list, key);
     checkTeamListIndex(list, index2);
 
@@ -40,6 +45,8 @@ public class Main {
     checkTeamArrayIndex(array, index3);
 
     // Runs the binary search on the array
+    System.out.println();
+    System.out.println("BINARY SEARCH");
     final Optional<Integer> index4 = Search.findTeamMinFundingFast(array, funding);
     checkTeamArrayIndex(array, index4);
   }
@@ -50,12 +57,8 @@ public class Main {
       System.out.println("Found!");
       final int pos = index.get();
       final Team team = array[pos];
-      // TODO DRY - eliminate this code duplication
-      System.out.println("Name: " + team.getName());
-      System.out.println("Head coach: " + team.getHeadcoach());
-      System.out.println("Funding: " + team.getFunding());
-      System.out.println("Array index: " + pos);
-      System.out.println("Ranking: " + (pos + 1));
+      // Completed eliminate this code duplication
+      printOut(team, pos);
     } else {
       System.out.println("Not Found!");
     }
@@ -67,14 +70,19 @@ public class Main {
       System.out.println("Found!");
       final int pos = index.get();
       final Team team = list.get(pos);
-      // TODO DRY - eliminate this code duplication
+      // Completed eliminate this code duplication
+      printOut(team, pos);
+    } else {
+      System.out.println("Not Found!");
+    }
+  }
+
+  static void printOut(Team team, int pos) {
       System.out.println("Name: " + team.getName());
       System.out.println("Head coach: " + team.getHeadcoach());
       System.out.println("Funding: " + team.getFunding());
       System.out.println("Array index: " + pos);
       System.out.println("Ranking: " + (pos + 1));
-    } else {
-      System.out.println("Not Found!");
-    }
   }
 }
+
